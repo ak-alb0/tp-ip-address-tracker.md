@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IP Address Tracker</title>
+</head>
+<body>
+    <div class="header">
+        <h1>IP Address Tracker</h1>
+        <div class="search-container">
+            <input type="text" id="ip-input" placeholder="Search for any IP address or domain">
+            <button id="search-btn">></button>
+        </div>
+    </div>
+    
+    <div class="info-container">
+        <div class="info-box">
+            <div class="info-title">IP ADDRESS</div>
+            <div class="info-value" id="ip">192.212.174.101</div>
+        </div>
+        <div class="info-box">
+            <div class="info-title">LOCATION</div>
+            <div class="info-value" id="location">Brooklyn, NY 10001</div>
+        </div>
+        <div class="info-box">
+            <div class="info-title">TIMEZONE</div>
+            <div class="info-value" id="timezone">UTC -05:00</div>
+        </div>
+        <div class="info-box">
+            <div class="info-title">ISP</div>
+            <div class="info-value" id="isp">SpaceX Starlink</div>
+        </div>
+    </div>
+    
+    <div id="map"></div>
+
+    <div class="loading" id="loading">Chargement...</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
